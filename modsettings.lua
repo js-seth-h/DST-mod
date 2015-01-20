@@ -15,4 +15,4 @@ ForceEnableMod("to-do-chores")
 -- Use "EnableModDebugPrint()" to show extra information during startup.
 
 --EnableModDebugPrint()
-EnableModDebugPrint()
+-- EnableModDebugPrint()

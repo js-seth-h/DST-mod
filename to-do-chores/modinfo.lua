@@ -1,7 +1,7 @@
 name = "To Do Chores"
 description = "To do chores, it is painful works but imperatively necessary for surviving."
 author = "js.seth.h"
-version = "0.1.1"
+version = "0.2a"
 
 forumthread = ""
 
@@ -20,7 +20,7 @@ dst_compatible = true
 all_clients_require_mod = false
 clients_only_mod = false
 
-server_filter_tags = {"chores"}
+server_filter_tags = {"chores", "geometry", "mine", "wood","chop", "AI", "auto"}
 
 
 icon_atlas = "modicon.xml"

@@ -74,7 +74,7 @@ Changes History
 
 
 author = "js.seth.h"
-version = "1.5"
+version = "1.5.2a"
 
 forumthread = ""
 
@@ -93,7 +93,7 @@ dst_compatible = true
 all_clients_require_mod = false
 clients_only_mod = false
 
-server_filter_tags = {"battle", "fighter", "weapon", "damange indicators", "damange", "equipment"}
+server_filter_tags = {"combat", "fighter", "weapon", "damange indicators", "damange", "auto", "equip", "equipment", "amulet"}
 
 icon_atlas = "modicon.xml"
 icon = "to-be-fighter.tex" 
