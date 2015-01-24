@@ -156,14 +156,20 @@ function Inst:inventory_TakeActiveItemFromAllOfSlot(fn)
   end   
 
   local overflow = self:inventory_GetOverflowContainer()
-  if overflow ~= nil then  
-    if overflow.slots then 
-      for k,v in pairs(overflow:GetItems()) do 
-        if fn(v) then
-          overflow:TakeActiveItemFromAllOfSlot(k)
-        end
-      end  
-    end
+  if overflow ~= nil then
+    local items = nil  
+    if overflow.slots ~= nil then 
+      items = overflow.slots
+    else 
+      items = overflow:GetItems()
+    end  
+
+    for k,v in pairs(items) do 
+      if fn(v) then
+        overflow:TakeActiveItemFromAllOfSlot(k)
+      end
+    end  
+    
   end
 end
 

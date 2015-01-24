@@ -91,7 +91,8 @@ reign_of_giants_compatible = true
 dst_compatible = true
 
 all_clients_require_mod = false
-clients_only_mod = false
+--This determines whether it causes a server to be marked as modded (and shows in the mod list)
+client_only_mod = true
 
 server_filter_tags = {"combat", "fighter", "weapon", "damange indicators", "damange", "auto", "equip", "equipment", "amulet"}
 

@@ -1,0 +1,852 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"cli",
+				"click"
+			],
+			[
+				"clic",
+				"click_area"
+			],
+			[
+				"sc",
+				"scene_id"
+			],
+			[
+				"prefa",
+				"prefab_name"
+			],
+			[
+				"plac",
+				"placer"
+			],
+			[
+				"_re",
+				"_reposition"
+			],
+			[
+				"pref",
+				"prefab_name"
+			],
+			[
+				"Cho",
+				"ChoresWheel"
+			],
+			[
+				"Global",
+				"GLOBAL"
+			],
+			[
+				"CHo",
+				"ChoresWheel"
+			],
+			[
+				"Img",
+				"ImageButton"
+			],
+			[
+				"ASS",
+				"Assets"
+			],
+			[
+				"armo",
+				"armors"
+			],
+			[
+				"_ar",
+				"_armorSorter"
+			],
+			[
+				"ar",
+				"armor_absorb"
+			],
+			[
+				"abso",
+				"absorb_percent"
+			],
+			[
+				"aro",
+				"armors"
+			],
+			[
+				"rang",
+				"rangeSq"
+			],
+			[
+				"inve",
+				"inventory_GetEquippedItem"
+			],
+			[
+				"Enab",
+				"EnableIcon"
+			],
+			[
+				"def",
+				"Default_Key"
+			],
+			[
+				"pre",
+				"prefab"
+			],
+			[
+				"pro",
+				"projectile"
+			],
+			[
+				"fu",
+				"function	function"
+			],
+			[
+				"cound",
+				"countdown"
+			],
+			[
+				"DOA",
+				"DoAttackButton"
+			],
+			[
+				"player",
+				"playercontroller"
+			],
+			[
+				"ins",
+				"insert"
+			],
+			[
+				"equ",
+				"equip"
+			],
+			[
+				"pct",
+				"pctB"
+			],
+			[
+				"The",
+				"ThePlayer"
+			],
+			[
+				"GetE",
+				"GetEquippedItem"
+			],
+			[
+				"TEST",
+				"TEST_FN"
+			],
+			[
+				"inv",
+				"inv_rep"
+			],
+			[
+				"he",
+				"health"
+			],
+			[
+				"damag",
+				"DamageIndicator"
+			],
+			[
+				"hea",
+				"healthdelta"
+			],
+			[
+				"tog",
+				"togglebutton"
+			],
+			[
+				"Sele",
+				"Selection_Widget"
+			],
+			[
+				"ON",
+				"OnControl"
+			],
+			[
+				"sel",
+				"selection_widget"
+			],
+			[
+				"_ov",
+				"_overPC_onControl"
+			],
+			[
+				"_orig",
+				"_origFnGA"
+			],
+			[
+				"targ",
+				"target_override"
+			],
+			[
+				"Auto",
+				"AutoEquip"
+			],
+			[
+				"pla",
+				"player"
+			],
+			[
+				"Autp",
+				"AutoEquip"
+			],
+			[
+				"_we",
+				"_weaponSorter"
+			],
+			[
+				"Do",
+				"DoAttackButton_ofFighter"
+			],
+			[
+				"du",
+				"durationB"
+			],
+			[
+				"ab",
+				"absorbB"
+			],
+			[
+				"dur",
+				"durationA"
+			],
+			[
+				"lab",
+				"Label"
+			],
+			[
+				"Create",
+				"CreateDamageIndicator"
+			],
+			[
+				"Thre",
+				"DISPLAY_THRESHOLD"
+			],
+			[
+				"Show",
+				"SHOW_DAMAGE_ONLY"
+			],
+			[
+				"play",
+				"player"
+			],
+			[
+				"do",
+				"DoAttackButton_ofFighter"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 334.0,
+		"selected_items":
+		[
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"rin",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"renin",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ren",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"rien",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Lua",
+				"Set Syntax: Lua Dev"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"format",
+				"FormatLua: Format Lua code"
+			],
+			[
+				"forma",
+				"FormatLua: Format Lua code"
+			],
+			[
+				"reni",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"lua",
+				"Set Syntax: Lua"
+			],
+			[
+				"erin",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Tabs",
+				"Indentation: Convert to Tabs"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/!projects/engine.room.js/engine/play.less",
+		"/E/!projects/engine.room.js/engine/trigger.coffee",
+		"/E/!projects/engine.room.js/engine/TEST_GAME.coffee",
+		"/E/!projects/engine.room.js/play.html",
+		"/E/!projects/engine.room.js/engine/engine.less",
+		"/E/!projects/engine.room.js/engine/polyfill.js",
+		"/E/!projects/engine.room.js/trigger.html",
+		"/E/!projects/engine.room.js/trigger.coffee",
+		"/E/!projects/engine.room.js/engine.room.coffee",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/playertargetindicator.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/DST-to-do-chores/scripts/components/auto_chores.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/rocks.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/evergreens.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/workshop-373991022/modmain.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/player_common.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/basehassler.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/DST-to-do-chores/scripts/widgets/chores.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/locomotor.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/DST-to-be-a-fighteer/modmain.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/actions.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/pickaxe.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/grass.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/pinnable.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/pickable.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/playercontroller.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/componentactions.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/berrybush.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/burnable.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/constants.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/DST-to-be-a-fighteer/scripts/components/damageindicator.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/DST-to-do-chores/modmain.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/inventoryitem.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/inventoryitem_replica.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/inventory_replica.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/inventoryitem_classified.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/widgets/imagebutton.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/widgets/button.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/widgets/widget.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/colourtweener.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/widgets/mapwidget.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/widgets/mapcontrols.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/debugkeys.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/screens/DebugMenuScreen.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/wilson.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/player_classified.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/debug-key/modmain.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/workshop-345692228/modinfo.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/workshop-373991022/scripts/prefabs/globalicon_network.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/workshop-363112314/modmain.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/modsettings.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/workshop-373991022/scripts/prefabs/globalicon.lua",
+		"/C/Program Files (x86)/Steam/steamapps/새 폴더/DST-to-be-a-fighter/modinfo.lua",
+		"/C/Program Files (x86)/Steam/steamapps/새 폴더/DST-to-be-a-fighter/readme.txt",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/workshop-373991022/modinfo.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/modutil.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/mainfunctions.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/strict.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/DST-to-be-a-fighter/modmain.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/debug-key/modinfo.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/adventure_portal.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/simutil.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/widgets/image.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/DST-to-do-chores/scripts/chores-lib/badgewheel.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/widgets/controls.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/widgets/uiclock.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/widgets/crafting.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/global.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/goldnugget.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/widgets/itemslot.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/widgets/controllercrafting.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/DST-to-be-a-fighter/scripts/widgets/fightersense.lua",
+		"/E/!projects/engine.room.js/engine.room.js.coffee",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-be-a-fighter/scripts/util/prefablibrary.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/projectile.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/combat_replica.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/amulet.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-be-a-fighter/scripts/components/fightersense.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/health_replica.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/tuning.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/combat.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/inventory.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/deerclops.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-be-a-fighter/scripts/util/instance.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/health.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/equippable.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/inventory_classified.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/armor.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-be-a-fighter/modmain.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-be-a-fighter/scripts/widgets/fightersense.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-be-a-fighter/modinfo.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/workshop-351325790/modmain.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/screens/playerhud.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/autosaver.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/equippable_replica.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/finiteuses.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/dont_starve/mods/modsettings.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-be-a-fighter/scripts/components/damageindicator.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/widgets/followtext.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/weapon.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-be-a-fighter/scripts/util/badgewheel.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/spear.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/blowdart.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/staff.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-be-a-fighter/scripts/util/countdown.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/tuning_override.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/hambat.lua",
+		"/C/Users/js/Downloads/GestureWheel1.0.1/GestureWheel/modmain.lua",
+		"/C/Users/js/Downloads/GestureWheel1.0.1/GestureWheel/modinfo.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/talker.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/widgets/text.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/reload.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/ToDoChore/test.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/ToDoChore/scripts/widgets/chore.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/brains/monkeybrain.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-be-a-fighter/scripts/widgets/badgewheel.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/images/inventoryimages.xml",
+		"/C/Users/js/Downloads/ActionQueue/ActionQueue/scripts/components/actionqueuer.lua",
+		"/C/TEXTool/tex/inventoryimages.xml",
+		"/C/Users/js/Downloads/GestureWheel1.0.1/GestureWheel/scripts/widgets/gesturebadge.lua",
+		"/C/Users/js/Downloads/GestureWheel1.0.1/GestureWheel/scripts/widgets/gesturewheel.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-be-a-fighter/scripts/widgets/badgebutton.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/mods.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/map/level.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/main.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/ToDoChore/modmain.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/childspawner.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/abigail.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/beehive.lua"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\components",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\widgets",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods\\workshop-373991022\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods\\workshop-373991022",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods\\workshop-373991022\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods\\workshop-373991022\\scripts\\prefabs",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods\\workshop-373991022\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods\\workshop-373991022",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\widgets",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\screens",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\widgets",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\prefabs",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\prefabs",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\widgets",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\widgets",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\widgets",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods\\to-be-a-fighter",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\prefabs",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\components",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods\\to-be-a-fighter",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\components",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods\\to-be-a-fighter",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\components",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods\\to-be-a-fighter\\scripts\\components",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods\\to-be-a-fighter",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods\\to-be-a-fighter",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods\\to-be-a-fighter",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\prefabs",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods\\to-be-a-fighter",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods\\to-be-a-fighter",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\widgets",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\screens",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\widgets",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods\\ToDoChore",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\prefabs",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\prefabs",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\prefabs",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"<open files>",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\brains",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\brains",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\prefabs",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\prefabs",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\components",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods\\ToDoChore",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods\\to-be-a-fighter",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\components",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\widgets",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\prefabs",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\widgets",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\widgets",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\widgets",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\prefabs",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\widgets",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\components",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\prefabs",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\components",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\components",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\prefabs",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\prefabs",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\components",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\prefabs",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\prefabs",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\components",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\components",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\components",
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\dont_starve\\data\\scripts"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"area",
+			"console.log",
+			"\"playerenter",
+			"\"player",
+			"\"playerexited\"",
+			"RecheckAllOwners",
+			"AllPlayer",
+			"shovel",
+			"Digger",
+			"barren",
+			"IsBarren",
+			"cycles_left",
+			"cyclesleft",
+			"barren",
+			"DIG",
+			"Dig",
+			"dig",
+			"\"pickable\"",
+			"GetActionButtonAction",
+			"ActionButton",
+			"pickable",
+			"GetMinerAction",
+			"_IsTreeSeed",
+			"round",
+			".round",
+			"DoTask",
+			"task_data",
+			"start",
+			"self.placers =",
+			"placerGap",
+			"Gain",
+			"GainFOcus",
+			"Gain",
+			"OnFocus",
+			"UpdateLocation",
+			"_IsTreeSeed",
+			"BtnFocus",
+			"OnUpdate",
+			"star",
+			"size",
+			"stack",
+			"Count",
+			"TryActiveItem",
+			"StopUpdating",
+			"start",
+			"Child",
+			"child",
+			"onShow",
+			"SetTint",
+			" = true, ",
+			"minimap",
+			"Minimap",
+			"Minpmap",
+			"globalicon",
+			"MiniMap",
+			":MiniMap",
+			"ContinuouslyClearRevealedAreas",
+			"MiniMap:",
+			"EnableFogOfWar",
+			"SetDrawOverFogOfWar",
+			"MiniMap",
+			"ShowArea",
+			"AddPlayerPostInit",
+			"ReadAllMiniMapAtlases",
+			"MiniMapEntity",
+			"playerexited",
+			"ReadAllMiniMapAtlases",
+			"PostInit",
+			"AddPost",
+			"name",
+			"modname",
+			"name",
+			"nMW",
+			"initprint",
+			"ModInitPrintEnabled",
+			"KnownModIndex",
+			"local function AddModCharacter(name)\nIsModInitPrintEnabled",
+			"IsModInitPrintEnabled",
+			"initprint",
+			"PrefabPostInitAny",
+			"AddPrefabPostInitAny",
+			"AddPlayerPostInit",
+			"function SpawnPrefabFromSim(name)\n\"",
+			"function SpawnPrefabFromSim(name)\nfunction SpawnPrefabFromSim(name)\nfunction SpawnPrefabFromSim(name)\nAddPlayerPostInit",
+			"AddPlayerPostInit",
+			"SpawnPrefabFromSim",
+			"PrefabPostInitAny",
+			"AddPrefabPostInitAny",
+			"AddSimPostInit",
+			"ipairs",
+			"AllPlayers",
+			"Player",
+			"MiniMapEntity",
+			"AddPlayerPostInit",
+			"\n\nfunction SimPostInit(player)\n	-- example of modifying the player charater\n	-- player.components.health:SetMaxHealth(50)\n\n	print(\"SimPostInit\")\n	if IsDST() then\n		_G.TheWorld:ListenForEvent(\"playeractivated\", OnActivated)\n\n	else \n		-- local TheWorld = _G.TheWorld and _G.TheWorld or _G.GetWorld()\n		SetTheWorld()\n		SetThePlayer(player)\n		OnActivated(player) \n	end\n\nend\n\nAddSimPostInit(SimPostInit)\n",
+			"AddPlayerPostInit",
+			"modname",
+			"getfenv",
+			"modname",
+			"modename",
+			"\"",
+			"click",
+			"topright_root",
+			"sidepanel",
+			"clock",
+			"uiclock",
+			"SetVRegPoint",
+			"SetVAnchor",
+			"Anch\nSetVAnchor",
+			"SetHAlign",
+			"SetVAlign",
+			"ImageButton",
+			"Tint",
+			"Transpa",
+			"Opacity",
+			"fepanels.xml",
+			"rock1_assets",
+			"goldnugget",
+			"gold_nugget",
+			"gold",
+			"OnGainFocus",
+			"Right",
+			"OnRightClick",
+			"RightClick",
+			":OnControl",
+			"Button:OnControl",
+			"table",
+			"table ="
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"playarea",
+			"debug",
+			"task_flag",
+			"Lose",
+			"\", \"",
+			"",
+			"AwareContingency",
+			"self",
+			"if IsDST() == false then",
+			"inventoryitem_PercentUsed",
+			"FS_HOLD_PROJECTILE",
+			"FS_HOLD_MELEE",
+			"FS_COMBAT_INSTINCT",
+			"Defensive Instinct",
+			"FS_DEFENSIVE_INSTINCT",
+			"FS_COMBAT_INSTINCT",
+			"DoOffenseSense",
+			".stat",
+			"stat",
+			"PrefabLibrary",
+			"FigtherSenseWidget",
+			"BadgeButton",
+			"_G",
+			"1.1",
+			"STAT.armor.hasTags",
+			"STAT",
+			"inst",
+			"Widget",
+			"Selection_Widget",
+			"PlayerHud",
+			"FighterSense"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.coffeecompile_output":
+	{
+		"height": 367.0
+	},
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/D/DST.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 182.0,
+	"status_bar_visible": true
+}
