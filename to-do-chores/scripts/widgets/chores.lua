@@ -180,17 +180,28 @@ function ChoresWheel:BtnGainFocus(task, icon)
     for prefab, flag in pairs(self.flag[task]) do
       if flag then prefab_name = prefab end 
     end
-
+    if prefab_name == nil then return end 
 
     local placerGap = PLACER_GAP[prefab_name]
 
-    if prefab_name == nil then return end 
+    local placer_item = Inst(ThePlayer):inventory_FindItems(function (item) return item.prefab == prefab_name end)[1]
 
-    local placer_item = SpawnPrefab(prefab_name) 
+    -- local placer_item = SpawnPrefab(prefab_name) 
+
+    print(placer_item)
     if placer_item == nil then 
       -- 심을것 없음 에러 
       return
     end
+    for k,v in pairs(placer_item.replica._) do
+      print(k, v)
+    end   
+
+    if placer_item.replica.inventoryitem == nil then 
+      -- 심을것 없음 에러 
+      return
+    end
+    print("placer_item.replica.inventoryitem", placer_item.replica.inventoryitem)
     local placer_name = placer_item.replica.inventoryitem:GetDeployPlacerName()
 
     self:StartUpdating()
@@ -202,9 +213,13 @@ function ChoresWheel:BtnGainFocus(task, icon)
         deployplacer.components.placer:SetBuilder(ThePlayer, nil, placer_item)
 
         local function _testfn(pt) 
-          return placer_item:IsValid() and
-          placer_item.replica.inventoryitem ~= nil and
-          placer_item.replica.inventoryitem:CanDeploy(pt)
+          local test_item = Inst(ThePlayer):inventory_GetActiveItem()
+
+          if test_item == nil or test_item.prefab ~= prefab_name then
+            test_item = Inst(ThePlayer):inventory_FindItems(function (item) return item.prefab == prefab_name end)[1]
+          end
+          return test_item ~= nil and test_item.replica.inventoryitem ~= nil and
+          test_item.replica.inventoryitem:CanDeploy(pt)
         end
 
         deployplacer.components.placer.testfn = _testfn
@@ -217,6 +232,7 @@ function ChoresWheel:BtnGainFocus(task, icon)
 
           self.can_build = self.testfn == nil or self.testfn(self.inst:GetPosition())
           local color = self.can_build and Vector3(.25,.75,.25) or Vector3(.75,.25,.25)
+          -- debug('SetAddColour', color.x , color.y , self.can_build, self.testfn)
           self.inst.AnimState:SetAddColour(color.x, color.y, color.z ,0)
 
         end

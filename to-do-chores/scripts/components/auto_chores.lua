@@ -88,6 +88,7 @@ local AutoChores = Class(function(self, inst)
   { })
 
 function AutoChores:SetTask(task, flag, placer)   
+  self:ClearPlacer()
   self.task = task -- "LumberJack"
   self.task_flag = flag
   self.task_placer = placer
@@ -202,24 +203,22 @@ function AutoChores:OverridePC()
         -- local act = BufferedAction(self.builder, nil, ACTIONS.DEPLOY, act.invobject, Vector3(self.inst.Transform:GetWorldPosition()))  
         local act = bufaction
         if not self.ismastersim then 
-          local position = TheInput:GetWorldPosition()
-          -- local position = bufaction.pos
-          local mouseover = TheInput:GetWorldEntityUnderMouse()
-          local controlmods = self:EncodeControlMods()
-          if self.locomotor == nil then
-            self.remote_controls[CONTROL_SECONDARY] = 0
-            SendRPCToServer(RPC.RightClick, act.action.code, position.x, position.z, mouseover, nil, controlmods, act.action.canforce, act.action.mod_name)
-          elseif act.action ~= ACTIONS.WALKTO and self:CanLocomote() then
 
-            function _cb() 
-              self.remote_controls[CONTROL_SECONDARY] = 0
-              local isreleased = not TheInput:IsControlPressed(CONTROL_SECONDARY)
-              SendRPCToServer(RPC.RightClick, act.action.code, position.x, position.z, mouseover, isreleased, controlmods, nil, act.action.mod_name)
-              -- print("PLAYER:inventory_ReturnActiveItem()")
-              -- PLAYER:inventory_ReturnActiveItem()              
-            end
-            act.preview_cb = _cb
+        
+
+          -- local position = TheInput:GetWorldPosition()
+          local position = bufaction.pos
+          local mouseover = false -- TheInput:GetWorldEntityUnderMouse()
+          local controlmods = nil
+
+          local function _cb() 
+            self.remote_controls[CONTROL_SECONDARY] = 0
+            local isreleased = true
+            SendRPCToServer(RPC.RightClick, act.action.code, position.x, position.z, mouseover, isreleased, controlmods, nil, act.action.mod_name)
+            -- print("PLAYER:inventory_ReturnActiveItem()")
+            -- PLAYER:inventory_ReturnActiveItem()              
           end
+          act.preview_cb = _cb
         end
 
         self:DoAction(act)
@@ -497,6 +496,8 @@ function AutoChores:GetPlanterAction()
     -- pos.x = pos.x + 2
     -- print('first', self.task_flag.first)
     -- local first = self.task_flag[self.task_flag.first]
+
+
     for k, placer in pairs(self.task_placer) do
       local pos = placer:GetPosition()
       if item.replica.inventoryitem:CanDeploy(pos) then
