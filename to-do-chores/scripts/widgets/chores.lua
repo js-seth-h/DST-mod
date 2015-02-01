@@ -19,14 +19,14 @@ local MAX_HUD_SCALE = 1.25
 local ChoresWheel = Class(Widget, function(self)
   Widget._ctor(self, "Chores") 
 
-  self:SetHAnchor(ANCHOR_RIGHT)
+  self:SetHAnchor(ANCHOR_LEFT)
   self:SetVAnchor(ANCHOR_BOTTOM)
   self:SetScaleMode(SCALEMODE_PROPORTIONAL) 
   self:SetMaxPropUpscale(MAX_HUD_SCALE)
 
   self.root = self:AddChild(Image("images/fepanels.xml","panel_mod1.tex"))
 
-  self.root:SetPosition(-200,300) 
+  self.root:SetPosition(250,300) 
   self.root:SetSize(400,450)
   self.root:SetTint(1,1,1,0.5)
 

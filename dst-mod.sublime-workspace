@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"tes",
+				"test_item"
+			],
+			[
+				"prefa",
+				"prefab"
+			],
+			[
+				"be",
+				"dug_berrybush"
+			],
+			[
+				"task",
+				"task_flag"
+			],
+			[
 				"font",
 				"font-size"
 			],
@@ -18,10 +34,6 @@
 			[
 				"sc",
 				"scene_id"
-			],
-			[
-				"prefa",
-				"prefab_name"
 			],
 			[
 				"plac",
@@ -243,19 +255,77 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "to-do-chores/scripts/components/auto_chores.lua",
+			"settings":
+			{
+				"buffer_size": 15030,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 7 files for \"replica\"\n\nC:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods\\to-do-chores\\scripts\\chores-lib\\instance.lua:\n   15      return false;\n   16    else \n   17:     return self.inst.replica.builder:IsBusy()\n   18    end\n   19  \n   ..\n   24      return self.inst.components.builder:KnowsRecipe(recipename)\n   25    else \n   26:     return self.inst.replica.builder:KnowsRecipe(recipename)\n   27    end\n   28  end\n   ..\n   31      return self.inst.components.builder:CanBuild(recipename)\n   32    else \n   33:     return self.inst.replica.builder:CanBuild(recipename)\n   34    end\n   35  end\n   ..\n   39      self.inst.components.builder:MakeRecipe(recipe)\n   40    else\n   41:     self.inst.replica.builder:MakeRecipeFromMenu(recipe)\n   42    end \n   43  end\n   ..\n   47      return self.inst.components.combat\n   48    else\n   49:     return self.inst.replica.combat\n   50    end \n   51  end\n   ..\n   55      return self.inst.components.combat.target\n   56    else\n   57:     return self.inst.replica.combat:GetTarget()\n   58    end \n   59  end\n   ..\n   63      return self.inst.components.combat:GetAttackRange()\n   64    else\n   65:     return self.inst.replica.combat:GetAttackRangeWithWeapon()\n   66    end \n   67  end\n   ..\n   71      return self.inst.components.equippable\n   72    else\n   73:     return self.inst.replica.equippable\n   74    end \n   75  end\n   ..\n   78      return self.inst.components.equippable.equipslot\n   79    else\n   80:     return self.inst.replica.equippable:EquipSlot()  \n   81    end \n   82  end\n   ..\n   86      return self.inst.components.health.maxhealth\n   87    else\n   88:     return self.inst.replica.health:Max()\n   89    end \n   90  end\n   ..\n   93      return self.inst.components.health.currenthealth\n   94    else\n   95:     return self.inst.replica.health.classified.currenthealth:value()\n   96    end \n   97  end\n   ..\n  101      return self.inst.components.inventory:GetEquippedItem(slot)  \n  102    else\n  103:     return self.inst.replica.inventory:GetEquippedItem(slot)  \n  104    end \n  105  end\n  ...\n  135  \n  136  function Inst:inventory_GetActiveItem()\n  137:   return self.inst.replica.inventory:GetActiveItem()\n  138  end\n  139  \n  140  function Inst:inventory_ReturnActiveItem()\n  141:   return self.inst.replica.inventory:ReturnActiveItem()\n  142  end\n  143  \n  ...\n  145    for k,v in pairs(self:inventory_GetItems()) do \n  146      if fn(v) then \n  147:       self.inst.replica.inventory:TakeActiveItemFromAllOfSlot(k)\n  148        return \n  149      end   \n  ...\n  151    for k,v in pairs(self:inventory_GetEquips()) do\n  152      if fn(v) then \n  153:       self.inst.replica.inventory:TakeActiveItemFromAllOfSlot(k)\n  154        return\n  155      end   \n  ...\n  178      return self.inst.components.inventory:UseItemFromInvTile(item)\n  179    else\n  180:     return self.inst.replica.inventory:UseItemFromInvTile(item)  \n  181    end \n  182  end\n  ...\n  185      return self.inst.components.inventory.itemslots\n  186    else\n  187:     return self.inst.replica.inventory:GetItems()  \n  188    end \n  189  end\n  ...\n  192      return self.inst.components.inventory.equipslots \n  193    else\n  194:     return self.inst.replica.inventory:GetEquips()  \n  195    end \n  196  end\n  ...\n  200      return item ~= nil and item.components.container or nil \n  201    else\n  202:     return self.inst.replica.inventory:GetOverflowContainer()  \n  203    end \n  204  end\n  ...\n  208      return self.inst.components.inventoryitem\n  209    else\n  210:     return self.inst.replica.inventoryitem\n  211    end \n  212  end\n  ...\n  218      return 100  -- 사용횟수가 제한이 없다면 항상 100%\n  219    else\n  220:     return self.inst.replica.inventoryitem.classified.percentused:value()\n  221    end  \n  222  end\n  ...\n  225      return self.inst.components.deployable:CanDeploy(pos)\n  226    else\n  227:     return self.inst.replica.inventoryitem:CanDeploy(pos)\n  228    end  \n  229  end\n  ...\n  232      \n  233    else\n  234:     return self.inst.replica.inventoryitem:GetDeployPlacerName()\n  235    end  \n  236  end\n\nC:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods\\to-do-chores\\scripts\\chores-lib\\prefablibrary.lua:\n   52    --   print(\"copy comp = \", k, v)\n   53    -- end\n   54:   -- print(\"replica-----------\")\n   55:   -- for k, v in pairs(copy.replica._ ) do\n   56:   --   print(\"copy replica = \", k, v)\n   57    -- end\n   58    if self.stats[prefab] == nil then\n\n27 matches across 2 files\n",
+			"settings":
+			{
+				"buffer_size": 4507,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "to-do-chores/scripts/chores-lib/instance.lua",
+			"settings":
+			{
+				"buffer_size": 6266,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "to-do-chores/modmain.lua",
+			"settings":
+			{
+				"buffer_size": 2730,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "to-do-chores/scripts/widgets/chores.lua",
+			"settings":
+			{
+				"buffer_size": 7888,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/inventoryitem_replica.lua",
+			"settings":
+			{
+				"buffer_size": 9686,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 334.0,
 		"selected_items":
 		[
 			[
-				"re",
+				"rein",
 				"Indentation: Reindent Lines"
 			],
 			[
-				"rein",
+				"lua ",
+				"Set Syntax: Lua Dev"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
 				"Indentation: Reindent Lines"
 			],
 			[
@@ -273,10 +343,6 @@
 			[
 				"ren",
 				"Indentation: Reindent Lines"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"rien",
@@ -336,6 +402,9 @@
 	},
 	"file_history":
 	[
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-do-chores/scripts/components/auto_chores.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-be-a-fighter/scripts/components/fightersense.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-do-chores/modinfo.lua",
 		"/E/!projects/engine.room.js/trigger.html",
 		"/E/!projects/engine.room.js/engine/trigger.coffee",
 		"/E/!projects/engine.room.js/engine/TEST_GAME.coffee",
@@ -354,7 +423,6 @@
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/container_replica.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-do-chores/scripts/chores-lib/instance.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/inventory_classified.lua",
-		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-do-chores/modinfo.lua",
 		"/E/!projects/engine.room.js/engine/play.less",
 		"/E/!projects/engine.room.js/play.html",
 		"/E/!projects/engine.room.js/engine/engine.less",
@@ -427,7 +495,6 @@
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/projectile.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/combat_replica.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/amulet.lua",
-		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-be-a-fighter/scripts/components/fightersense.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/health_replica.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/tuning.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/combat.lua",
@@ -462,8 +529,7 @@
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/ToDoChore/scripts/widgets/chore.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/brains/monkeybrain.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-be-a-fighter/scripts/widgets/badgewheel.lua",
-		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/images/inventoryimages.xml",
-		"/C/Users/js/Downloads/ActionQueue/ActionQueue/scripts/components/actionqueuer.lua"
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/images/inventoryimages.xml"
 	],
 	"find":
 	{
@@ -471,9 +537,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
+			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods\\to-do-chores\\scripts",
 			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
 			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts\\components",
 			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\data\\scripts",
@@ -601,6 +668,25 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"_isDigger",
+			"placerGap",
+			"PLACER_GAP",
+			"Inst(",
+			"replica",
+			"inventoryitem_CanDeploy",
+			"replica",
+			".prefab",
+			"task_placer",
+			"placer",
+			"_IsTreeSeed",
+			"_IsStump",
+			"_isChopper",
+			"_IsTreeLoot",
+			"SEE_TREE_DIST",
+			"_IsTree",
+			"_isChopper",
+			"berrybush2",
+			"Equip",
 			"inventory_GetOverflowContainer",
 			"GetItems",
 			"slots",
@@ -709,26 +795,7 @@
 			"modename",
 			"\"",
 			"click",
-			"topright_root",
-			"sidepanel",
-			"clock",
-			"uiclock",
-			"SetVRegPoint",
-			"SetVAnchor",
-			"Anch\nSetVAnchor",
-			"SetHAlign",
-			"SetVAlign",
-			"ImageButton",
-			"Tint",
-			"Transpa",
-			"Opacity",
-			"fepanels.xml",
-			"rock1_assets",
-			"goldnugget",
-			"gold_nugget",
-			"gold",
-			"OnGainFocus",
-			"Right"
+			"topright_root"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -736,6 +803,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"SEE_DIST_WORK_TARGET",
 			"",
 			"playarea",
 			"debug",
@@ -778,13 +846,303 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "to-do-chores/scripts/components/auto_chores.lua",
+					"settings":
+					{
+						"buffer_size": 15030,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13614,
+								13614
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua Dev/Lua.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 36.0,
+						"translation.y": 5817.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"settings":
+					{
+						"buffer_size": 4507,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										225,
+										232
+									],
+									[
+										391,
+										398
+									],
+									[
+										572,
+										579
+									],
+									[
+										733,
+										740
+									],
+									[
+										895,
+										902
+									],
+									[
+										1036,
+										1043
+									],
+									[
+										1199,
+										1206
+									],
+									[
+										1364,
+										1371
+									],
+									[
+										1516,
+										1523
+									],
+									[
+										1678,
+										1685
+									],
+									[
+										1832,
+										1839
+									],
+									[
+										2026,
+										2033
+									],
+									[
+										2180,
+										2187
+									],
+									[
+										2309,
+										2316
+									],
+									[
+										2477,
+										2484
+									],
+									[
+										2677,
+										2684
+									],
+									[
+										2886,
+										2893
+									],
+									[
+										3063,
+										3070
+									],
+									[
+										3228,
+										3235
+									],
+									[
+										3401,
+										3408
+									],
+									[
+										3570,
+										3577
+									],
+									[
+										3713,
+										3720
+									],
+									[
+										3905,
+										3912
+									],
+									[
+										4028,
+										4035
+									],
+									[
+										4305,
+										4312
+									],
+									[
+										4361,
+										4368
+									],
+									[
+										4402,
+										4409
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1891.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "to-do-chores/scripts/chores-lib/instance.lua",
+					"settings":
+					{
+						"buffer_size": 6266,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6030,
+								6033
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua Dev/Lua.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2921.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "to-do-chores/modmain.lua",
+					"settings":
+					{
+						"buffer_size": 2730,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2730,
+								2730
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua Dev/Lua.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 626.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		},
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 4,
+					"file": "to-do-chores/scripts/widgets/chores.lua",
+					"settings":
+					{
+						"buffer_size": 7888,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								791,
+								791
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua Dev/Lua.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/inventoryitem_replica.lua",
+					"settings":
+					{
+						"buffer_size": 9686,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8066,
+								7960
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua Dev/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2936.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -816,7 +1174,7 @@
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.519347403893,
 			1.0
 		],
 		"rows":
@@ -863,6 +1221,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 182.0,
+	"side_bar_width": 175.0,
 	"status_bar_visible": true
 }
