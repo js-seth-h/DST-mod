@@ -38,7 +38,7 @@ local ChoresWheel = Class(Widget, function(self)
   -- self.root:CreateBadges(4) 
 
   self.flag ={
-    axe = {pinecone = false},
+    axe = {pinecone = false, charcoal = false},
     pickaxe = { nitre = false, goldnugget = true},
     shovel = { dug_grass = true, dug_berrybush = true, dug_sapling = true},
     backpack = { cutgrass = true, berries = true, twigs = true, flint = true},
@@ -46,7 +46,7 @@ local ChoresWheel = Class(Widget, function(self)
   }
 
   self.layout ={
-    {"axe", "pinecone"},
+    {"axe", "pinecone", "charcoal"},
     {"pickaxe", "nitre","goldnugget"},
     {"backpack", "flint", "cutgrass", "twigs", "berries"},
     {"shovel", "dug_grass", "dug_berrybush", "dug_sapling"},
