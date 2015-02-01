@@ -399,7 +399,7 @@ function AutoChores:GetDiggerAction()
     if self.task_flag["dug_grass"] == true and item.prefab == "cutgrass" then return true end 
     if self.task_flag["dug_grass"] == true and item.prefab == "dug_grass" then return true end 
     if self.task_flag["dug_berrybush"] == true and item.prefab == "berries" then return true end   
-    if self.task_flag["dug_berrybush"] == true and ( item.prefab == "berrybush" or item.prefab == "berrybush2" ) then return true end   
+    if self.task_flag["dug_berrybush"] == true and ( item.prefab == "dug_berrybush" or item.prefab == "dug_berrybush2" ) then return true end   
     if self.task_flag["dug_sapling"] == true and item.prefab == "twigs" then return true end    
     if self.task_flag["dug_sapling"] == true and item.prefab == "dug_sapling" then return true end    
     return false 
@@ -438,7 +438,7 @@ function AutoChores:GetDiggerAction()
     print("target = ", target)
     if target then
       if self:TestHandAction(_isDigger) == false then
-        -- print("do Equip digger", digger)
+        print("do Equip digger", digger)
         return BufferedAction(self.inst, nil, ACTIONS.EQUIP, digger)
       end
       return BufferedAction(self.inst, target, ACTIONS.DIG, digger )

@@ -10,7 +10,7 @@ CW = nil
 local PLACER_GAP = {
   pinecone = 3,
   dug_grass = 1,
-  dug_berrybush = 2,
+  dug_berrybush = 3,
   dug_sapling = 1
 }
 
