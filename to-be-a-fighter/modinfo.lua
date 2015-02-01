@@ -1,4 +1,4 @@
-name = "To Be A Fighter"
+name = "To Be A Fighter"  
 description = [===[
              To Be A Fighter - ver 1.5
 ================================================================
