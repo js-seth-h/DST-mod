@@ -256,14 +256,6 @@
 	"buffers":
 	[
 		{
-			"file": "to-do-chores/scripts/components/auto_chores.lua",
-			"settings":
-			{
-				"buffer_size": 15030,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"contents": "Searching 7 files for \"replica\"\n\nC:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods\\to-do-chores\\scripts\\chores-lib\\instance.lua:\n   15      return false;\n   16    else \n   17:     return self.inst.replica.builder:IsBusy()\n   18    end\n   19  \n   ..\n   24      return self.inst.components.builder:KnowsRecipe(recipename)\n   25    else \n   26:     return self.inst.replica.builder:KnowsRecipe(recipename)\n   27    end\n   28  end\n   ..\n   31      return self.inst.components.builder:CanBuild(recipename)\n   32    else \n   33:     return self.inst.replica.builder:CanBuild(recipename)\n   34    end\n   35  end\n   ..\n   39      self.inst.components.builder:MakeRecipe(recipe)\n   40    else\n   41:     self.inst.replica.builder:MakeRecipeFromMenu(recipe)\n   42    end \n   43  end\n   ..\n   47      return self.inst.components.combat\n   48    else\n   49:     return self.inst.replica.combat\n   50    end \n   51  end\n   ..\n   55      return self.inst.components.combat.target\n   56    else\n   57:     return self.inst.replica.combat:GetTarget()\n   58    end \n   59  end\n   ..\n   63      return self.inst.components.combat:GetAttackRange()\n   64    else\n   65:     return self.inst.replica.combat:GetAttackRangeWithWeapon()\n   66    end \n   67  end\n   ..\n   71      return self.inst.components.equippable\n   72    else\n   73:     return self.inst.replica.equippable\n   74    end \n   75  end\n   ..\n   78      return self.inst.components.equippable.equipslot\n   79    else\n   80:     return self.inst.replica.equippable:EquipSlot()  \n   81    end \n   82  end\n   ..\n   86      return self.inst.components.health.maxhealth\n   87    else\n   88:     return self.inst.replica.health:Max()\n   89    end \n   90  end\n   ..\n   93      return self.inst.components.health.currenthealth\n   94    else\n   95:     return self.inst.replica.health.classified.currenthealth:value()\n   96    end \n   97  end\n   ..\n  101      return self.inst.components.inventory:GetEquippedItem(slot)  \n  102    else\n  103:     return self.inst.replica.inventory:GetEquippedItem(slot)  \n  104    end \n  105  end\n  ...\n  135  \n  136  function Inst:inventory_GetActiveItem()\n  137:   return self.inst.replica.inventory:GetActiveItem()\n  138  end\n  139  \n  140  function Inst:inventory_ReturnActiveItem()\n  141:   return self.inst.replica.inventory:ReturnActiveItem()\n  142  end\n  143  \n  ...\n  145    for k,v in pairs(self:inventory_GetItems()) do \n  146      if fn(v) then \n  147:       self.inst.replica.inventory:TakeActiveItemFromAllOfSlot(k)\n  148        return \n  149      end   \n  ...\n  151    for k,v in pairs(self:inventory_GetEquips()) do\n  152      if fn(v) then \n  153:       self.inst.replica.inventory:TakeActiveItemFromAllOfSlot(k)\n  154        return\n  155      end   \n  ...\n  178      return self.inst.components.inventory:UseItemFromInvTile(item)\n  179    else\n  180:     return self.inst.replica.inventory:UseItemFromInvTile(item)  \n  181    end \n  182  end\n  ...\n  185      return self.inst.components.inventory.itemslots\n  186    else\n  187:     return self.inst.replica.inventory:GetItems()  \n  188    end \n  189  end\n  ...\n  192      return self.inst.components.inventory.equipslots \n  193    else\n  194:     return self.inst.replica.inventory:GetEquips()  \n  195    end \n  196  end\n  ...\n  200      return item ~= nil and item.components.container or nil \n  201    else\n  202:     return self.inst.replica.inventory:GetOverflowContainer()  \n  203    end \n  204  end\n  ...\n  208      return self.inst.components.inventoryitem\n  209    else\n  210:     return self.inst.replica.inventoryitem\n  211    end \n  212  end\n  ...\n  218      return 100  -- 사용횟수가 제한이 없다면 항상 100%\n  219    else\n  220:     return self.inst.replica.inventoryitem.classified.percentused:value()\n  221    end  \n  222  end\n  ...\n  225      return self.inst.components.deployable:CanDeploy(pos)\n  226    else\n  227:     return self.inst.replica.inventoryitem:CanDeploy(pos)\n  228    end  \n  229  end\n  ...\n  232      \n  233    else\n  234:     return self.inst.replica.inventoryitem:GetDeployPlacerName()\n  235    end  \n  236  end\n\nC:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods\\to-do-chores\\scripts\\chores-lib\\prefablibrary.lua:\n   52    --   print(\"copy comp = \", k, v)\n   53    -- end\n   54:   -- print(\"replica-----------\")\n   55:   -- for k, v in pairs(copy.replica._ ) do\n   56:   --   print(\"copy replica = \", k, v)\n   57    -- end\n   58    if self.stats[prefab] == nil then\n\n27 matches across 2 files\n",
 			"settings":
 			{
@@ -290,6 +282,23 @@
 			}
 		},
 		{
+			"file": "make.ds.ps1",
+			"settings":
+			{
+				"buffer_size": 524,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "build.ds.cmd",
+			"settings":
+			{
+				"buffer_size": 67,
+				"line_ending": "Windows",
+				"name": "powershell.exe -noprofile -executionpolicy bypass"
+			}
+		},
+		{
 			"file": "to-do-chores/scripts/widgets/chores.lua",
 			"settings":
 			{
@@ -302,6 +311,14 @@
 			"settings":
 			{
 				"buffer_size": 9686,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "ds-battle-sence/modinfo.lua",
+			"settings":
+			{
+				"buffer_size": 5496,
 				"line_ending": "Windows"
 			}
 		}
@@ -402,6 +419,7 @@
 	},
 	"file_history":
 	[
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/make.ds.ps",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-do-chores/scripts/components/auto_chores.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-be-a-fighter/scripts/components/fightersense.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-do-chores/modinfo.lua",
@@ -528,8 +546,7 @@
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/ToDoChore/test.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/ToDoChore/scripts/widgets/chore.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/brains/monkeybrain.lua",
-		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-be-a-fighter/scripts/widgets/badgewheel.lua",
-		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/images/inventoryimages.xml"
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-be-a-fighter/scripts/widgets/badgewheel.lua"
 	],
 	"find":
 	{
@@ -537,7 +554,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Don't Starve Together Beta\\mods\\to-do-chores\\scripts",
@@ -846,39 +863,10 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "to-do-chores/scripts/components/auto_chores.lua",
-					"settings":
-					{
-						"buffer_size": 15030,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								13614,
-								13614
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Lua Dev/Lua.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 36.0,
-						"translation.y": 5817.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"settings":
 					{
 						"buffer_size": 4507,
@@ -1019,13 +1007,13 @@
 							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1891.0,
+						"translation.y": 1441.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "to-do-chores/scripts/chores-lib/instance.lua",
 					"settings":
 					{
@@ -1053,7 +1041,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "to-do-chores/modmain.lua",
 					"settings":
 					{
@@ -1064,8 +1052,8 @@
 						"selection":
 						[
 							[
-								2730,
-								2730
+								1150,
+								1150
 							]
 						],
 						"settings":
@@ -1075,7 +1063,60 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 626.0,
+						"translation.y": 536.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "make.ds.ps1",
+					"settings":
+					{
+						"buffer_size": 524,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								148,
+								148
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "build.ds.cmd",
+					"settings":
+					{
+						"buffer_size": 67,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								67,
+								67
+							]
+						],
+						"settings":
+						{
+							"auto_name": "powershell.exe -noprofile -executionpolicy bypass",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1083,11 +1124,11 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "to-do-chores/scripts/widgets/chores.lua",
 					"settings":
 					{
@@ -1098,8 +1139,8 @@
 						"selection":
 						[
 							[
-								791,
-								791
+								1471,
+								1471
 							]
 						],
 						"settings":
@@ -1116,7 +1157,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/inventoryitem_replica.lua",
 					"settings":
 					{
@@ -1139,6 +1180,34 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 2936.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "ds-battle-sence/modinfo.lua",
+					"settings":
+					{
+						"buffer_size": 5496,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1919,
+								1919
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua Dev/Lua.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1125.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

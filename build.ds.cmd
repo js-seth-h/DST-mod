@@ -1,0 +1,1 @@
+powershell.exe -noprofile -executionpolicy bypass -File make.ds.ps1
