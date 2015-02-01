@@ -203,6 +203,13 @@ function Inst:inventory_GetOverflowContainer()
   end 
 end
 
+function Inst:inventoryitem()
+  if IsDST() == false then
+    return self.inst.components.inventoryitem
+  else
+    return self.inst.replica.inventoryitem
+  end 
+end
 function Inst:inventoryitem_PercentUsed()
   if IsDST() == false then 
     if self.inst.components.armor ~= nil then return self.inst.components.armor:GetPercent() end
@@ -211,6 +218,20 @@ function Inst:inventoryitem_PercentUsed()
     return 100  -- 사용횟수가 제한이 없다면 항상 100%
   else
     return self.inst.replica.inventoryitem.classified.percentused:value()
+  end  
+end
+function Inst:inventoryitem_CanDeploy(pos)
+  if IsDST() == false then  
+    return self.inst.components.deployable:CanDeploy(pos)
+  else
+    return self.inst.replica.inventoryitem:CanDeploy(pos)
+  end  
+end
+function Inst:inventoryitem_GetDeployPlacerName()
+  if IsDST() == false then  
+    
+  else
+    return self.inst.replica.inventoryitem:GetDeployPlacerName()
   end  
 end
 

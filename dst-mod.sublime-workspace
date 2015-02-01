@@ -247,9 +247,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 334.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
 			[
 				"rein",
 				"Indentation: Reindent Lines"
@@ -332,13 +336,29 @@
 	},
 	"file_history":
 	[
-		"/E/!projects/engine.room.js/engine/play.less",
+		"/E/!projects/engine.room.js/trigger.html",
 		"/E/!projects/engine.room.js/engine/trigger.coffee",
 		"/E/!projects/engine.room.js/engine/TEST_GAME.coffee",
+		"/C/Program Files (x86)/Steam/steamapps/common/dont_starve/data/scripts/simutil.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/dont_starve/mods/to-be-a-fighter/modinfo.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/dont_starve/mods/workshop-323996352/modinfo.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/dont_starve/mods/workshop-323413761/modinfo.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/dont_starve/mods/workshop-298407615/modinfo.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/dont_starve/mods/to-be-a-fighter/modmain.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/dont_starve/mods/modsettings.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/dont_starve/mods/workshop-372102633/modinfo.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/container.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-be-a-fighter/modinfo.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/inventory_replica.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/inventory.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/container_replica.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-do-chores/scripts/chores-lib/instance.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/inventory_classified.lua",
+		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-do-chores/modinfo.lua",
+		"/E/!projects/engine.room.js/engine/play.less",
 		"/E/!projects/engine.room.js/play.html",
 		"/E/!projects/engine.room.js/engine/engine.less",
 		"/E/!projects/engine.room.js/engine/polyfill.js",
-		"/E/!projects/engine.room.js/trigger.html",
 		"/E/!projects/engine.room.js/trigger.coffee",
 		"/E/!projects/engine.room.js/engine.room.coffee",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/playertargetindicator.lua",
@@ -365,7 +385,6 @@
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/DST-to-do-chores/modmain.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/inventoryitem.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/inventoryitem_replica.lua",
-		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/inventory_replica.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/inventoryitem_classified.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/widgets/imagebutton.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/widgets/button.lua",
@@ -412,22 +431,18 @@
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/health_replica.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/tuning.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/combat.lua",
-		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/inventory.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/deerclops.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-be-a-fighter/scripts/util/instance.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/health.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/equippable.lua",
-		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/inventory_classified.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/armor.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-be-a-fighter/modmain.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-be-a-fighter/scripts/widgets/fightersense.lua",
-		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-be-a-fighter/modinfo.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/workshop-351325790/modmain.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/screens/playerhud.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/autosaver.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/equippable_replica.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/finiteuses.lua",
-		"/C/Program Files (x86)/Steam/steamapps/common/dont_starve/mods/modsettings.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-be-a-fighter/scripts/components/damageindicator.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/widgets/followtext.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/weapon.lua",
@@ -448,18 +463,7 @@
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/brains/monkeybrain.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-be-a-fighter/scripts/widgets/badgewheel.lua",
 		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/images/inventoryimages.xml",
-		"/C/Users/js/Downloads/ActionQueue/ActionQueue/scripts/components/actionqueuer.lua",
-		"/C/TEXTool/tex/inventoryimages.xml",
-		"/C/Users/js/Downloads/GestureWheel1.0.1/GestureWheel/scripts/widgets/gesturebadge.lua",
-		"/C/Users/js/Downloads/GestureWheel1.0.1/GestureWheel/scripts/widgets/gesturewheel.lua",
-		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/to-be-a-fighter/scripts/widgets/badgebutton.lua",
-		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/mods.lua",
-		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/map/level.lua",
-		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/main.lua",
-		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/mods/ToDoChore/modmain.lua",
-		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/components/childspawner.lua",
-		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/abigail.lua",
-		"/C/Program Files (x86)/Steam/steamapps/common/Don't Starve Together Beta/data/scripts/prefabs/beehive.lua"
+		"/C/Users/js/Downloads/ActionQueue/ActionQueue/scripts/components/actionqueuer.lua"
 	],
 	"find":
 	{
@@ -597,6 +601,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"inventory_GetOverflowContainer",
+			"GetItems",
+			"slots",
+			"GetItems",
+			"GetOverflowContainer",
+			"inventory_GetOverflowContainer",
 			"area",
 			"console.log",
 			"\"playerenter",
@@ -718,13 +728,7 @@
 			"gold_nugget",
 			"gold",
 			"OnGainFocus",
-			"Right",
-			"OnRightClick",
-			"RightClick",
-			":OnControl",
-			"Button:OnControl",
-			"table",
-			"table ="
+			"Right"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -777,6 +781,11 @@
 			"sheets":
 			[
 			]
+		},
+		{
+			"sheets":
+			[
+			]
 		}
 	],
 	"incremental_find":
@@ -796,11 +805,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":

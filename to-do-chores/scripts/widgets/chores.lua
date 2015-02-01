@@ -184,7 +184,15 @@ function ChoresWheel:BtnGainFocus(task, icon)
 
     local placerGap = PLACER_GAP[prefab_name]
 
-    local placer_item = Inst(ThePlayer):inventory_FindItems(function (item) return item.prefab == prefab_name end)[1]
+    local function _find_placer (item) 
+      if item == nil then return false end 
+      if prefab_name == "dug_berrybush" and item.prefab == "dug_berrybush2" then
+        return true
+      end
+      return item.prefab == prefab_name 
+    end
+
+    local placer_item = Inst(ThePlayer):inventory_FindItems(_find_placer)[1]
 
     -- local placer_item = SpawnPrefab(prefab_name) 
 
@@ -193,16 +201,14 @@ function ChoresWheel:BtnGainFocus(task, icon)
       -- 심을것 없음 에러 
       return
     end
-    for k,v in pairs(placer_item.replica._) do
-      print(k, v)
-    end   
+ 
 
-    if placer_item.replica.inventoryitem == nil then 
+    if Inst(placer_item):inventoryitem() == nil then 
       -- 심을것 없음 에러 
       return
     end
-    print("placer_item.replica.inventoryitem", placer_item.replica.inventoryitem)
-    local placer_name = placer_item.replica.inventoryitem:GetDeployPlacerName()
+ 
+     local placer_name = Inst(placer_item):inventoryitem_GetDeployPlacerName()
 
     self:StartUpdating()
 
@@ -215,11 +221,10 @@ function ChoresWheel:BtnGainFocus(task, icon)
         local function _testfn(pt) 
           local test_item = Inst(ThePlayer):inventory_GetActiveItem()
 
-          if test_item == nil or test_item.prefab ~= prefab_name then
-            test_item = Inst(ThePlayer):inventory_FindItems(function (item) return item.prefab == prefab_name end)[1]
+          if _find_placer(test_item) == false then
+            test_item = Inst(ThePlayer):inventory_FindItems(_find_placer)[1]
           end
-          return test_item ~= nil and test_item.replica.inventoryitem ~= nil and
-          test_item.replica.inventoryitem:CanDeploy(pt)
+          return test_item ~= nil and Inst(test_item):inventoryitem_CanDeploy(pt)
         end
 
         deployplacer.components.placer.testfn = _testfn

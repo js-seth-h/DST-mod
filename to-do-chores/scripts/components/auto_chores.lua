@@ -399,7 +399,7 @@ function AutoChores:GetDiggerAction()
     if self.task_flag["dug_grass"] == true and item.prefab == "cutgrass" then return true end 
     if self.task_flag["dug_grass"] == true and item.prefab == "dug_grass" then return true end 
     if self.task_flag["dug_berrybush"] == true and item.prefab == "berries" then return true end   
-    if self.task_flag["dug_berrybush"] == true and item.prefab == "dug_berrybush" then return true end   
+    if self.task_flag["dug_berrybush"] == true and ( item.prefab == "berrybush" or item.prefab == "berrybush2" ) then return true end   
     if self.task_flag["dug_sapling"] == true and item.prefab == "twigs" then return true end    
     if self.task_flag["dug_sapling"] == true and item.prefab == "dug_sapling" then return true end    
     return false 
@@ -461,7 +461,7 @@ function AutoChores:GetPlanterAction()
   if item ~= nil then 
     for k, placer in pairs(self.task_placer) do
       local pos = placer:GetPosition()
-      if item.replica.inventoryitem:CanDeploy(pos) then
+      if Inst(item):inventoryitem_CanDeploy(pos) then
         return BufferedAction(self.inst, nil, ACTIONS.DEPLOY, item, pos)
       end
     end
