@@ -3,8 +3,7 @@ workshop-*
 #ignore thumbnails created by windows
 Thumbs.db
 #Ignore files build by Visual Studio
-*.obj
-*.exe
+*.obj 
 *.pdb
 *.user
 *.aps
