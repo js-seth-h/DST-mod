@@ -78,7 +78,7 @@ Changes Log
 ------------------------
 0.5
   bugfix : modmain.lua for DS/ROG (working correctly, now ) 
-  new : add 'berrybush2
+  new : add 'berrybush2'
   new : add 'charcoal'
   reposition widget to left side
 
