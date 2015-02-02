@@ -68,3 +68,18 @@ The other is option of chores.
 ***IMPORTANT***
 
 "Planting" is make 5 * 4 rectangle. planting 20 items at once. but its automatically stick to position. so it is easy, planting partial and complete after or make big farm.
+
+
+
+
+
+Changes Log
+------------------------
+0.5
+  bugfix : luamain config with DS/ROG (working correctly, now ) 
+  new : add 'berrybush2
+  new : add 'charcoal'
+  reposition widget to left side
+
+~0.4
+  initial, fix critical running problem
