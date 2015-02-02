@@ -39,6 +39,7 @@ The other is option of chores.
 * Row 1. 
   * axe - chop down tree
   * pine cone - toggle pick or not
+  * charcoal - toogle cut burnt and pick charcoal
 
 * Row 2
   * pickaxe - mining
@@ -81,5 +82,13 @@ Changes Log
   new : add 'charcoal'
   reposition widget to left side
 
-~0.4
-  initial, fix critical running problem
+0.4
+fix crash planting on client
+  fix planting color bug on client
+  fix planting location on client
+  fix crash placer == nil (tnk to iRukario)
+
+0.3 
+  fix crash when planting from backpack  ( thx to Solo feeder )
+
+
