@@ -134,42 +134,53 @@ function Inst:inventory_FindItems(fn)
 end
 
 function Inst:inventory_GetActiveItem()
-  return self.inst.replica.inventory:GetActiveItem()
+  if IsDST() == false then
+    return self.inst.components.inventory:GetActiveItem()
+  else
+    return self.inst.replica.inventory:GetActiveItem()
+  end
 end
 
 function Inst:inventory_ReturnActiveItem()
-  return self.inst.replica.inventory:ReturnActiveItem()
+  if IsDST() == false then
+    return self.inst.components.inventory:ReturnActiveItem()
+  else
+    return self.inst.replica.inventory:ReturnActiveItem()
+  end
 end
 
 function Inst:inventory_TakeActiveItemFromAllOfSlot(fn)
-  for k,v in pairs(self:inventory_GetItems()) do 
-    if fn(v) then 
-      self.inst.replica.inventory:TakeActiveItemFromAllOfSlot(k)
-      return 
+  if IsDST() == false then  
+    return self.inst.components.inventory:FindItems(fn) 
+  else
+    for k,v in pairs(self:inventory_GetItems()) do 
+      if fn(v) then 
+        self.inst.replica.inventory:TakeActiveItemFromAllOfSlot(k)
+        return 
+      end   
+    end 
+    for k,v in pairs(self:inventory_GetEquips()) do
+      if fn(v) then 
+        self.inst.replica.inventory:TakeActiveItemFromAllOfSlot(k)
+        return
+      end   
     end   
-  end 
-  for k,v in pairs(self:inventory_GetEquips()) do
-    if fn(v) then 
-      self.inst.replica.inventory:TakeActiveItemFromAllOfSlot(k)
-      return
-    end   
-  end   
 
-  local overflow = self:inventory_GetOverflowContainer()
-  if overflow ~= nil then
-    local items = nil  
-    if overflow.slots ~= nil then 
-      items = overflow.slots
-    else 
-      items = overflow:GetItems()
-    end  
+    local overflow = self:inventory_GetOverflowContainer()
+    if overflow ~= nil then
+      local items = nil  
+      if overflow.slots ~= nil then 
+        items = overflow.slots
+      else 
+        items = overflow:GetItems()
+      end  
 
-    for k,v in pairs(items) do 
-      if fn(v) then
-        overflow:TakeActiveItemFromAllOfSlot(k)
-      end
-    end  
-    
+      for k,v in pairs(items) do 
+        if fn(v) then
+          overflow:TakeActiveItemFromAllOfSlot(k)
+        end
+      end   
+    end
   end
 end
 
@@ -215,7 +226,7 @@ function Inst:inventoryitem_PercentUsed()
     if self.inst.components.armor ~= nil then return self.inst.components.armor:GetPercent() end
     if self.inst.components.finiteuses ~= nil then return self.inst.components.finiteuses:GetPercent() end
     if self.inst.components.fueled ~= nil then return self.inst.components.fueled:GetPercent() end
-    return 100  -- 사용횟수가 제한이 없다면 항상 100%
+    return 100  -- ?�용?�수가 ?�한???�다�???�� 100%
   else
     return self.inst.replica.inventoryitem.classified.percentused:value()
   end  
@@ -228,8 +239,8 @@ function Inst:inventoryitem_CanDeploy(pos)
   end  
 end
 function Inst:inventoryitem_GetDeployPlacerName()
-  if IsDST() == false then  
-    
+  if IsDST() == false then   
+    return self.inst.components.deployable.placer or ((self.inst.prefab or "") .. "_placer")
   else
     return self.inst.replica.inventoryitem:GetDeployPlacerName()
   end  

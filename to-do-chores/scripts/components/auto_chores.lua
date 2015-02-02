@@ -3,6 +3,13 @@
 local Inst = require "chores-lib.instance" 
 local PrefabLibary = require("chores-lib.prefablibrary")  
 
+local function _pickable(item)
+  if IsDST() then
+    return item:HasTag("pickable")
+  else 
+    return item.components.pickable.canbepicked
+  end 
+end
 
 
 local ChoreLib = PrefabLibary(function (proto)
@@ -21,22 +28,22 @@ local function _isChopper(item)
   local stat = ChoreLib:Get(item)
   if stat == nil then return false end
   if stat.tool == nil then return false end
-  return stat.tool.CHOP
+  return stat.tool.CHOP == true
 end
 
 local function _isDigger(item)
   if item == nil then return false end
   local stat = ChoreLib:Get(item)
   if stat == nil then return false end
-  if stat.tool == nil then return false end
-  return stat.tool.DIG
+  if stat.tool == nil then return false end 
+  return stat.tool.DIG == true
 end
 local function _isMiner(item)
   if item == nil then return false end
   local stat = ChoreLib:Get(item)
   if stat == nil then return false end
   if stat.tool == nil then return false end
-  return stat.tool.MINE
+  return stat.tool.MINE == true
 end
 
 
@@ -47,11 +54,14 @@ local AutoChores = Class(function(self, inst)
   print("AutoChores") 
   self.inst:ListenForEvent("actionfailed", function(inst) inst.components.auto_chores:StopLoop() end)
 
-  
-  self.ActionButtonDown = true
-  self:OverridePC()
-  self:OverrideInput()
 
+  self.ActionButtonDown = true
+  self:OverrideInput()
+  if IsDST() then  
+    self:OverridePC()
+  else 
+    self:MockController()
+  end
   end,
   nil,
   { })
@@ -62,6 +72,7 @@ function AutoChores:SetTask(task, flag, placer)
   self.task_flag = flag
   self.task_placer = placer
   print("SetTask", task, flag, placer) 
+
 end 
 function AutoChores:ForceStop()
   -- body
@@ -99,6 +110,72 @@ function AutoChores:GetAction()
     return self:GetPlanterAction() 
   end
 end
+
+function AutoChores:MockController( )
+  local auto_chores = self
+  local PLAYER = Inst(self.inst)
+  local pc = self.inst.components.playercontroller
+
+  local function _doChore() 
+    local bufaction = auto_chores:GetAction()
+    print("auto_chores", bufaction)
+    if bufaction == nil then 
+      auto_chores:StopLoop() 
+    else
+      if bufaction.action == ACTIONS.EQUIP then
+        PLAYER:inventory_UseItemFromInvTile(bufaction.invobject)
+        self.passtime = 10 -- 10 * 0.03ÃÊ => 0.3ÃÊ
+        return
+      end 
+      self.inst.components.locomotor:PushAction(bufaction, true)
+    end
+  end
+
+  local _fnOrig = TheInput.IsControlPressed
+  self.inst:DoPeriodicTask( 1 / 30, function() 
+    if self.task == nil then  return end
+    if self.inst.sg:HasStateTag("idle") then
+      _doChore()
+    end
+    end)
+
+  local _fnOrig =  pc.GetActionButtonAction
+  local function _fnOver(self, force_target)
+    if auto_chores.task == nil then return _fnOrig(self, force_target) end
+    if not self.inst.sg:HasStateTag("idle") then return end 
+
+    if self.passtime ~= nil and self.passtime > 0 then
+      self.passtime = self.passtime - 1
+      return
+    end
+    _doChore() 
+
+  end
+
+
+  pc.GetActionButtonAction = _fnOver
+
+end
+
+-- function AutoChores:StartTask()
+--   local action = self:GetAction()
+
+--   if action then
+--     action:AddFailAction( function() 
+--       print("fail action")
+--       self:StopLoop() 
+--       end)
+--     action:AddSuccessAction(function ()
+--       print("ok action")
+--       self:StartTask()
+--       end)
+
+--     print("do ACTIONS = ", action)
+--     self.inst.components.locomotor:PushAction(action, true)
+--   else 
+--     self:StopLoop()
+--   end
+-- end
 
 function AutoChores:OverrideInput()
   local auto_chores = self
@@ -160,15 +237,15 @@ function AutoChores:OverridePC()
     else
       if bufaction.action == ACTIONS.BUILD  then
         if not PLAYER:builder_IsBusy() then
-          self.passtime = 20 -- 20 * 0.03ì´ˆ => 0.6ì´ˆ
+          self.passtime = 20 -- 20 * 0.03ÃÊ => 0.6ÃÊ
           PLAYER:builder_MakeRecipeBy(bufaction.recipe)
         end 
       elseif bufaction.action == ACTIONS.EQUIP then
         PLAYER:inventory_UseItemFromInvTile(bufaction.invobject)
-          self.passtime = 10 -- 10 * 0.03ì´ˆ => 0.3ì´ˆ
-          return
-        elseif bufaction.action == ACTIONS.DEPLOY then 
-        -- TODO ë””í”Œë¡œì´ ê¸°ëŠ¥ êµ¬í˜„ í•˜ê¸°
+        self.passtime = 10 -- 10 * 0.03ÃÊ => 0.3ÃÊ
+        return
+      elseif bufaction.action == ACTIONS.DEPLOY then 
+        -- TODO µðÇÃ·ÎÀÌ ±â´É ±¸Çö ÇÏ±â
         -- local act = BufferedAction(self.builder, nil, ACTIONS.DEPLOY, act.invobject, Vector3(self.inst.Transform:GetWorldPosition()))  
         local act = bufaction
         if not self.ismastersim then  
@@ -379,9 +456,9 @@ function AutoChores:GetCollectorAction()
   local target = FindEntity(self.inst, SEE_DIST_WORK_TARGET, function (item) 
     if item == nil then return false end
     if self.task_flag["flint"] == true and item.prefab == "flint" then return true end 
-    if self.task_flag["cutgrass"] == true and item.prefab == "grass" and item:HasTag("pickable") then return true end   
-    if self.task_flag["twigs"] == true and item.prefab == "sapling" and item:HasTag("pickable") then return true end   
-    if self.task_flag["berries"] == true and (item.prefab == "berrybush" or item.prefab == "berrybush2") and item:HasTag("pickable") then return true end   
+    if self.task_flag["cutgrass"] == true and item.prefab == "grass" and _pickable(item) then return true end   
+    if self.task_flag["twigs"] == true and item.prefab == "sapling" and _pickable(item) then return true end   
+    if self.task_flag["berries"] == true and (item.prefab == "berrybush" or item.prefab == "berrybush2") and _pickable(item) then return true end   
     return false 
     end)
   if target then
