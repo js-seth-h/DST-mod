@@ -56,7 +56,7 @@ Changes History
 ---------------------
 1.6
   new : Keep equpiped 'MinerHat'.
-  bugfix : luamain config with DS/ROG (working correctly, now ) 
+  bugfix : modmain.lua for DS/ROG (working correctly, now ) 
 1.5
   fix butterfly crash
 

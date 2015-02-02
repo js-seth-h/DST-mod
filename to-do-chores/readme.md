@@ -76,7 +76,7 @@ The other is option of chores.
 Changes Log
 ------------------------
 0.5
-  bugfix : luamain config with DS/ROG (working correctly, now ) 
+  bugfix : modmain.lua for DS/ROG (working correctly, now ) 
   new : add 'berrybush2
   new : add 'charcoal'
   reposition widget to left side
