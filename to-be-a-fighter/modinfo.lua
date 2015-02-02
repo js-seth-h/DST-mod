@@ -1,80 +1,8 @@
-name = "To Be A Fighter"  
-description = [===[
-             To Be A Fighter - ver 1.5
-================================================================
-
-As a Fighter, Characters have to be prepared for battle. 
-
-Features 
------------------------------- 
-
-=== Combat Instinct === 
-
-When you attack, you will automatically equip a weapon, helmet and armor piece. 
-
-=== Defensive Instinct === 
-
-When attacked or a hostile approaches, you will automatically put on a helmet and armor piece
-
-(DS/RoG only) It will put on a 'Life Giving Amulet' automatically as well, if you have an amulet. 
-
-
-=== Damage indicators === 
-
-Shows exactly how much health was lost/gained upon healing or being hit.
-
-
-=== Gameplay Controls === 
-
-Widget Key (Default "C") show widget that controls options.  
-
-4 buttons are provided. 
-
-Button 1. Toggle Enable Combat Instinct or Disable Combat Instinct in 5 Min. 
-Button 2. Toggle Enable Defensive Instinct or Disable Combat Instinct in 5 Min. 
-Button 3. In Combat Instinct if a melee weapon is equipped, Toggle Change weapon or not 
-Button 3. In Combat Instinct if a projectile weapon is equipped, Toggle Change weapon or not 
-
-
-
-Mod Config
------------------------------- 
-
-* Combat Instinct 
-Set Default Toggle state of Widget Button 1 
-* Defensive Instinct 
-Set Default Toggle state of Widget Button 2 
-* CI: Keep Melee 
-Set Default Toggle state of Widget Button 3 
-* CI: Keep Projectile 
-Set Default Toggle state of Widget Button 4 
-
-The other options are trivial. 
-
-
-
-Changes History 
----------------------
-1.5
-  fix butterfly crash
-
-1.4
-  Widget is Supported in DS/RoG
-
-1.0 ~ 1.3
-  Add Life Giving Amulet functionality
-  Fix long distance weapon
-  Support Widget in DST
-
-0.1 
-  Initial development 
-
-
-]===]
-
+name = "Battle Sense"  
+description = "Battle Sense(a.k.a 'To Be A Fighter') is helpful tool for combat & life guard"
 
 author = "js.seth.h"
-version = "1.5.2a"
+version = "1.6"
 
 forumthread = ""
 
@@ -118,29 +46,7 @@ configuration_options =
         label = "Widget Button",
         options = keyslist,
         default = Default_Key
-    },      
-    -- {
-    --   name = "FIGHTER_SENSE_TRIGGER",
-    --   label = "Fighter Sense Trigger",
-    --   options = {
-    --     {description = "Universal", data = "universal"},
-    --     {description = "Keyboard Only", data = "keyboard"},
-    --   },
-
-    --   default = "universal",
-
-    -- },
-
-    -- {
-    --   name = "LIGHTNING_REFLEXES",
-    --   label = "Lightning Reflexes",
-    --   options = {
-    --     {description = "On", data = "on"},
-    --     {description = "Off", data = "off"},
-    --   },
-
-    --   default = "on", 
-    -- },
+    }, 
     {
       name = "FS_COMBAT_INSTINCT",
       label = "Combat Instinct",
@@ -180,8 +86,7 @@ configuration_options =
       },
 
       default = "on", 
-    },
-
+    }, 
     {
       name = "SHOW_DAMAGE",
       label = "Show Damage",
@@ -203,22 +108,7 @@ configuration_options =
 
       default = "on",
 
-    },
-
-    -- {
-    --   name = "display_mode",
-    --   label = "Display Mode",
-    --   options = {
-    --     {description = "Bouncy", data = "bouncy"},
-    --     {description = "Waving", data = "waving"},
-    --     {description = "Straight", data = "straight"},
-    --   },
-
-    --   default = "waving",
-
-    -- },
-
-
+    },  
     {
       name = "HIDE_HP_CHANGES_LESS",
       label = "Hide HP Changes Less",
