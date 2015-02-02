@@ -225,6 +225,7 @@ end
 
 
 SEE_DIST_WORK_TARGET = 25
+SEE_DIST_LOOT = 5
 
 
 
@@ -235,7 +236,7 @@ function AutoChores:GetLumberJackAction()
 
   item = self:GetItem(_isChopper)
   if item == nil then
-    local target = FindEntity(self.inst, SEE_DIST_WORK_TARGET, _isChopper)
+    local target = FindEntity(self.inst, SEE_DIST_LOOT, _isChopper)
     if target then
       return BufferedAction(self.inst, target, ACTIONS.PICKUP )
     end 
@@ -255,7 +256,7 @@ function AutoChores:GetLumberJackAction()
   -- print("finded digger = ", item)
 
   if item == nil then 
-    local target = FindEntity(self.inst, SEE_DIST_WORK_TARGET, _isDigger)
+    local target = FindEntity(self.inst, SEE_DIST_LOOT, _isDigger)
     if target then
       return BufferedAction(self.inst, target, ACTIONS.PICKUP )
     end 
@@ -268,7 +269,7 @@ function AutoChores:GetLumberJackAction()
 
   local digger = item 
   
-  local target = FindEntity(self.inst, SEE_DIST_WORK_TARGET, function (item)
+  local target = FindEntity(self.inst, SEE_DIST_LOOT, function (item)
     if item == nil then return false end
     if item.prefab == "log" then return true end 
     if self.task_flag["charcoal"] == true and item.prefab == "charcoal" then return true end 
@@ -323,7 +324,7 @@ function AutoChores:GetMinerAction()
 
   item = self:GetItem(_isMiner)
   if item == nil then
-    local target = FindEntity(self.inst, SEE_DIST_WORK_TARGET, _isMiner)
+    local target = FindEntity(self.inst, SEE_DIST_LOOT, _isMiner)
     if target then
       return BufferedAction(self.inst, target, ACTIONS.PICKUP )
     end 
@@ -338,7 +339,7 @@ function AutoChores:GetMinerAction()
 
 
 
-  local target = FindEntity(self.inst, SEE_DIST_WORK_TARGET, function (item) 
+  local target = FindEntity(self.inst, SEE_DIST_LOOT, function (item) 
     if item == nil then return false end
     if self.task_flag["nitre"] == true and item.prefab == "nitre" then return true end 
     if self.task_flag["goldnugget"] == true and item.prefab == "goldnugget" then return true end 
@@ -394,7 +395,7 @@ end
 
 
 function AutoChores:GetDiggerAction()  
-  local target = FindEntity(self.inst, SEE_DIST_WORK_TARGET, function (item)  
+  local target = FindEntity(self.inst, SEE_DIST_LOOT, function (item)  
     if item == nil then return false end 
     if self.task_flag["dug_grass"] == true and item.prefab == "cutgrass" then return true end 
     if self.task_flag["dug_grass"] == true and item.prefab == "dug_grass" then return true end 
@@ -411,7 +412,7 @@ function AutoChores:GetDiggerAction()
 
   local item = self:GetItem(_isDigger) 
   if item == nil then 
-    local target = FindEntity(self.inst, SEE_DIST_WORK_TARGET, _isDigger)
+    local target = FindEntity(self.inst, SEE_DIST_LOOT, _isDigger)
     if target then
       return BufferedAction(self.inst, target, ACTIONS.PICKUP )
     end 
@@ -423,7 +424,7 @@ function AutoChores:GetDiggerAction()
   end
 
   local digger = item 
-  print("digger = ", digger)
+  -- print("digger = ", digger)
 
   if digger then 
     target = FindEntity(self.inst, SEE_DIST_WORK_TARGET, function (item)   
@@ -435,7 +436,7 @@ function AutoChores:GetDiggerAction()
       return false 
       end)
 
-    print("target = ", target)
+    -- print("target = ", target)
     if target then
       if self:TestHandAction(_isDigger) == false then
         print("do Equip digger", digger)
