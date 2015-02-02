@@ -204,7 +204,7 @@ function AutoChores:OverridePC()
         local act = bufaction
         if not self.ismastersim then 
 
-        
+          
 
           -- local position = TheInput:GetWorldPosition()
           local position = bufaction.pos
@@ -498,12 +498,14 @@ function AutoChores:GetPlanterAction()
     -- local first = self.task_flag[self.task_flag.first]
 
 
-    for k, placer in pairs(self.task_placer) do
-      local pos = placer:GetPosition()
-      if item.replica.inventoryitem:CanDeploy(pos) then
-        return BufferedAction(self.inst, nil, ACTIONS.DEPLOY, item, pos)
+    if self.task_placer ~= nil then
+      for k, placer in pairs(self.task_placer) do
+        local pos = placer:GetPosition()
+        if item.replica.inventoryitem:CanDeploy(pos) then
+          return BufferedAction(self.inst, nil, ACTIONS.DEPLOY, item, pos)
+        end
       end
-    end
+    end 
   end
 
   Inst(self.inst):inventory_ReturnActiveItem()
