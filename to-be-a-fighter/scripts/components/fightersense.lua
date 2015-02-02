@@ -335,8 +335,11 @@ function FighterSense:DoAutoEquip(hand, head, armor)
     self:ProperEquip(items, _weaponFinder, _weaponSorter, EQUIPSLOTS.HANDS)
   end
   if head then 
-    -- print("HEAD ------------------")
-    self:ProperEquip(items, _headFinder, _armorSorter, EQUIPSLOTS.HEAD)
+    -- print("HEAD ------------------") 
+    local hat = Inst(ThePlayer):inventory_GetEquippedItem(EQUIPSLOTS.HEAD)
+    if not( hat ~= nil and hat.prefab == "minerhat" ) then
+      self:ProperEquip(items, _headFinder, _armorSorter, EQUIPSLOTS.HEAD)
+    end
   end
 
   if armor then 
