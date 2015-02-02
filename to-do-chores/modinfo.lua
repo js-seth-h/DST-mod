@@ -1,7 +1,7 @@
 name = "To Do Chores"
 description = "To do chores, it is painful works but imperatively necessary for surviving."
 author = "js.seth.h"
-version = "0.5"
+version = "0.6"
 
 forumthread = ""
 

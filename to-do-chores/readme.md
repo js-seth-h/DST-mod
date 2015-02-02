@@ -76,6 +76,8 @@ The other is option of chores.
 
 Changes Log
 ------------------------
+0.6
+  change pickup item radious(25 -> 5)
 0.5
   bugfix : modmain.lua for DS/ROG (working correctly, now ) 
   new : add 'berrybush2'
