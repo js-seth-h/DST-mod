@@ -203,11 +203,13 @@ function FighterSense:DoOffenseSense(bufferedaction, run, try_instant)
     local hands = Inst(player):inventory_GetEquippedItem(EQUIPSLOTS.HANDS)
     if hands ~= nil and (TUNING.FS_HOLD_PROJECTILE or TUNING.FS_HOLD_MELEE) then
       local stat = WeaponLib:Get(hands)
-      if TUNING.FS_HOLD_PROJECTILE and stat.weapon.longdistance then
-        change_hand = false
-      end 
-      if TUNING.FS_HOLD_MELEE and stat.weapon.reasonable then
-        change_hand = false
+      if stat.weapon ~= nil then 
+        if TUNING.FS_HOLD_PROJECTILE and stat.weapon.longdistance then
+          change_hand = false
+        end 
+        if TUNING.FS_HOLD_MELEE and stat.weapon.reasonable then
+          change_hand = false
+        end 
       end 
     end 
     self:DoAutoEquip(change_hand,true,true) 

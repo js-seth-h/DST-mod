@@ -2,7 +2,7 @@ name = "Battle Sense"
 description = "Battle Sense(a.k.a 'To Be A Fighter') is helpful tool for combat & life guard"
 
 author = "js.seth.h"
-version = "1.6"
+version = "1.6a"
 
 forumthread = ""
 

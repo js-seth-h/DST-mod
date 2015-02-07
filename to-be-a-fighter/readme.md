@@ -53,10 +53,11 @@ The other options are trivial.
 
 
 Changes History 
----------------------
+--------------------- 
 1.6
   new : Keep equpiped 'MinerHat'.
   bugfix : modmain.lua for DS/ROG (working correctly, now ) 
+  bugfix : check nil component
 1.5
   fix butterfly crash
 
