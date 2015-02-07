@@ -350,8 +350,16 @@ function AutoChores:GetLumberJackAction()
     if item == nil then return false end
     if item.prefab == "log" then return true end 
     if self.task_flag["charcoal"] == true and item.prefab == "charcoal" then return true end 
-    if self.task_flag["pinecone"] == true and item.prefab == "pinecone" and item.issapling:value() == false then return true end 
-    if item.prefab == "acorn" then return true end -- this is Birchnut
+    
+
+    
+    if IsDST() == false then
+      if self.task_flag["pinecone"] == true and item.prefab == "pinecone" and item.components.inventoryitem ~= nil then return true end       
+      if self.task_flag["pinecone"] == true and item.prefab == "acorn" and item.components.inventoryitem ~= nil then return true end     
+    else
+      if self.task_flag["pinecone"] == true and item.prefab == "pinecone" and item.issapling:value() == false then return true end      
+      if self.task_flag["pinecone"] == true and item.prefab == "acorn" and item.issapling:value() == false then return true end   
+    end
     return false
     end)
   if target then
